@@ -22,3 +22,15 @@ def problem_01(number_list, k):
 				break
 		i = i + 1
 	return flag
+
+
+def problem_01_bonus(num_list, k):
+	memory = dict()
+	for number in num_list:
+		if number <= k:
+			expected_pair = k - number
+			memo = memory.get(expected_pair)
+			if memo:
+				return True
+			memory[number] = expected_pair
+	return False
