@@ -22,7 +22,7 @@ def getLongestSubstring(s, k):
 	return longestSubstr
 
 
-print getLongestSubstring("abcba", 2)
-print getLongestSubstring("abcdedev", 2)
+print(getLongestSubstring("abcba", 2))
+print(getLongestSubstring("abcdedev", 2))
 
 
